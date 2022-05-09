@@ -8,7 +8,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Build tool action
-        id: hello
         uses: heathd/publish-mdbooks-to-github-pages-action@v2
         with:
           input-dir: 'testbook'
