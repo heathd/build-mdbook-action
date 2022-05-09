@@ -9,5 +9,5 @@ jobs:
         id: hello
         uses: heathd/publish-mdbooks-to-github-pages-action@v2
         with:
-          input-dir: '.'
-          output-dir: '.'
+          input-dir: 'testbook'
+          output-dir: 'output'
