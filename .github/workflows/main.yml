@@ -5,6 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     name: Build test book
     steps:
+      - name: Checkout
+        uses: actions/checkout@v3
       - name: Build tool action
         id: hello
         uses: heathd/publish-mdbooks-to-github-pages-action@v2
