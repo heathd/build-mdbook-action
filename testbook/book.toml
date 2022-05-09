@@ -1,0 +1,13 @@
+[book]
+authors = ["David Heath"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Test book"
+
+[build]
+build-dir = "/target"
+
+[preprocessor.plantuml]
+plantuml-cmd="plantuml"
+clickable_img=true
