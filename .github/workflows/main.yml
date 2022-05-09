@@ -5,11 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
-      - name: Hello world action step
+      - name: Build tool action
         id: hello
-        uses: heathd/publish-mdbooks-to-github-pages-action@v1
+        uses: heathd/publish-mdbooks-to-github-pages-action@v2
         with:
-          who-to-greet: 'Mona the Octocat'
-      # Use the output from the `hello` step
-      - name: Get the output time
-        run: echo "The time was ${{ steps.hello.outputs.time }}"
+          input-dir: '.'
+          output-dir: '.'
